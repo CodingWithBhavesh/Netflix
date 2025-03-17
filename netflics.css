@@ -1,0 +1,477 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    /*border and padding etc would count in given heighht  */
+    border: border-box; 
+    color: white;
+}
+button{
+    border: 1px;;
+}
+.nav-bar{
+    display:flex ;
+    justify-content: space-between;
+    height: 50px;
+    /* max-width: 70vw; */
+    /* margin: auto; */
+    padding: 2rem;
+    /* padding: 20px 26px; */
+    /* background-color: black; */
+}
+/* .nav-logo{
+    display: inline-block; */
+    /* height: 30px; */
+    /* margin-top: 1.4rem; 
+}*/
+.logo{
+    /* background-image: url("netflix-logo.jpg"); */
+    height: 30px;
+    width: 100%;
+     position: relative;
+    left: 0rem;
+
+}
+.netflix-logo{
+    height: 50px;
+    position: relative;
+    /* position: relative;
+    left: 0px; */
+}
+
+.lang{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.lang-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 2rem; */
+    /* width: 200px; */
+    /* display: flex; */
+}
+
+.lang-select-msg{
+    width: 120px;
+    padding-left: 10px;
+    /* text-align: center; */
+    height: 32px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: rgb(148, 89, 75);
+    /* color: white; */
+    /* position: absolute;
+    right: 13rem; */
+}
+.lang-select-msg:hover{
+    transition: all 1.5s ease;
+
+    background-color: rgb(72, 109, 163);
+
+}
+
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* position:absolute;
+    right: 7rem; */
+    height:32px ;
+    width:83px ;
+    padding-left: 10px;
+    /* color: white; */
+    /* background-color: red; */
+
+}
+.showSignup{
+    text-align: center;
+}
+
+.signup-msg:hover{
+    opacity: 89%;    
+    transition: all 2s ease;
+    background-color: rgb(5, 5, 5);
+
+}
+
+.signup-msg{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    font-size: large;
+    /* color: white; */
+    background-color: rgb(240, 0, 0);
+    border-radius: 13%;
+    cursor: pointer;
+  
+}
+
+
+.header{
+    height: 512px;
+    width: 100%;
+    background-image: url("netflix-background.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+    /* position: relative;
+    left: 0;
+    right: 0; */
+
+}
+
+.message1{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    height: 44px;
+    /* color: white; */
+    margin-top: 120px;
+}
+.msg2{ 
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    height: 44px;
+    /* color: white; */
+    margin-top: 10px;
+
+}
+
+.msg3{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    height: 44px;
+    /* color: white; */
+}
+
+/* .border:click{
+    border: 3px solid black;
+} */
+/* .border:clicked{
+    border: 3px solid black;
+} */
+
+.login-part{
+    display: flex;
+    justify-content: center;
+}
+
+
+.login-email{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+}
+.email::placeholder{
+    font-size: 1.1rem;
+    
+}
+
+
+.email{
+    width: 309px ;
+    border-radius: 6px;
+    padding-left: 1rem;
+}
+
+.email:hover::placeholder{
+    /* font-size: 1px; */
+    /* animation-name: emailAnimation 1s ; */
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 0.89rem ;
+    transition: all 5s ease-in;
+    /* transition: top 1s ease,left 3s ease; */
+    
+}
+
+
+.get-started{
+    padding-left: 4px;
+}
+.getstarted-msg{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 200px;
+    /* color: white; */
+    background-color: rgb(220, 0, 0);
+    border-radius: 7%;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.getstarted-msg:hover{
+    cursor: pointer;
+    transition: all 2s ease;
+    background-color: rgb(5, 5, 5);
+    opacity: 90% ;
+    /* background-color: black; */
+}
+
+
+
+/* booxx22 */
+.box2{
+    height: 500px;
+    background-color: black;
+}
+ 
+
+.box2{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+
+
+.box2-msg1{
+    /* margin-left: ; */
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.box2-msg2{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    /* font-weight: 600; */
+}
+
+.tv-animation{
+    display: flex;
+}
+
+.tv-animation-img{
+    height: 435px;
+    position: absolute\;
+    
+}
+.tv-animation-video{
+    position: absolute;
+
+    height: 300px;
+}
+
+
+/* box3 */
+
+.box3{
+    height: 550px;
+    background-color: black;
+    /* color: white; */
+}
+
+.box3-content{
+    display: flex;
+    /* padding-top: 10rem; */
+}
+
+.box3-message-container{
+    /* display: inline-flex;
+    align-items: center;
+    justify-content: center; */
+    height: 250px;
+    position: relative;
+    top: 10rem;
+    /* padding-top: 10rem; */
+}
+
+.box3-msg1{
+    font-size: 1.4rem;
+}
+
+.box3-msg2{
+    font-size: 1.5rem;
+}
+
+/* boxxxxx444444 */
+/* .box4{
+    height: 510px;
+    background-color: black;
+} */
+
+/* boxx4 */
+.box4{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 600px;
+    background-color: black;
+    padding-top: 3rem;
+}
+.box4-ques-list{
+    height: 70vh;
+    width: 160vh;
+    margin: auto;
+
+}
+.box4-msg1{
+    text-align: center;
+    /* color: white; */
+    font-size: 1.7rem;
+    /* display: flex;
+    justify-content: center; */
+    font-weight: 500 ;
+    /* padding: 3rem; */
+}
+
+.box4-ques-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem    ;
+
+    line-height: 30px;
+    /* background-color: black; */
+    /* height: 200px; */
+     /* margin-top: 2rem;
+     width: 70vw;
+     margin: auto; */
+    /*padding-top: 2rem; */
+    /* border: 2px solid white; */
+}
+label{
+    height: 43px;
+    width: 100vh;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* width: 110vh; */
+    /* margin: auto; */
+    font-size: 27px;
+    background-color: rgba(75, 72, 72, 0.616);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+label:hover{
+    transition: all 0.64s ease;
+    background-color: rgba(102, 96, 96, 0.616);
+}
+
+.ques-input{
+    display: none;
+}
+.box4-ques-list .innercontent{
+    font-size: 22px;
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 3s;
+    /* border-top: 10px solid white ; */
+
+}
+
+.ques-input:checked ~ .innercontent{
+    /* background-color: red; */
+    opacity: 1;
+    height: auto;
+    max-height: 300vh;
+    margin-bottom: 10px;
+    width: 50vw;
+    /* margin: auto; */
+    padding: 20px;
+    background-color: rgba(75, 72, 72, 0.616);
+    border-top: 2px solid black ;
+}
+
+
+/* .ques{
+    height: 80px;
+    width: 900px;
+    background-color: rgba(75, 72, 72, 0.616);
+    color: white;
+    text-align: left;
+    padding: 2rem;
+    font-size: 1.4rem;
+    /* padding: 1rem; 
+}
+.ques:hover{
+    cursor: pointer;
+}
+.ques-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+.ques-list:hover{
+    opacity: 83%;
+} */
+
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    line-height: 1.4;
+}
+
+
+/* footer */
+.footer-content{
+    color: #ffffffb3;
+    height: 330px;
+    background-color: black;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center;   */
+    padding-top: 3rem;
+   
+    
+}
+.footer{
+    display: grid   ;
+}
+
+.footer-forQuery{
+    display: flex;
+    /* margin-top: 1rem; */
+    padding-bottom: 10px;
+}
+.footer-forQuery-msg{
+    
+    margin-top: 2rem;
+    margin-left: 6.53rem;
+}
+
+.footer-panel2{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 3;
+    text-decoration:underline;
+}
+/* .footer-panel2:hover{
+    cursor: pointer;
+}  */
+/* .footer-panel2 a{
+    display: inline-block;
+} */
+
+
+ul a{
+    display: block;
+    line-height: 2rem;
+}
+
+

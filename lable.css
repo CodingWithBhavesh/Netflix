@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+.ques{
+    height: 80px;
+    width: 900px;
+    background-color: rgba(75, 72, 72, 0.616);
+    color: white;
+    text-align: left;
+    padding: 2rem;
+    font-size: 1.4rem;
+    /* padding: 1rem; */
+}
+.ques:hover{
+    cursor: pointer;
+}
+.ques-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+.ques-list:hover{
+    opacity: 83%;
+}
+
+.ques-list li{
+    line-height: 6;
+}
