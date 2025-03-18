@@ -12,7 +12,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <img src="logo.svg" alt="Netflix Logo" class="img-fluid" style="max-width: 150px;">
-                <div>
+                <div style="display: flex;gap:30px;">
                     <select class="form-select d-inline w-auto">
                         <option>English</option>
                     </select>
@@ -24,12 +24,16 @@
             <h1 class="mt-4">Unlimited movies, TV shows and more</h1>
             <p>Watch anywhere. Cancel anytime.</p>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div class="input-group w-50 mx-auto">
-                <input type="email" class="form-control" placeholder="Email address">
-                <button class="btn btn-danger">Get Started ></button>
+            <div class="loginInputs" style="display: block;">
+            <div class="input-group w-75 w-md-50 w-lg-50 mx-auto">
+                <input type="email" class="form-control email" placeholder="Email address">
+                <button class="btn btn-danger btn-sm">Get Started ></button>
             </div>
         </div>
+        </div>
     </header>
+    <hr style="margin: .0000000000001px ;">
+
     
     <section class="py-5 bg-dark text-white">
         <div class="container text-center">
@@ -47,8 +51,9 @@
             </div>
         </div>
     </section>
+    <hr style="margin: 1px ;">
     
-    <section class="py-5">
+    <section class="py-5 py-5 bg-dark text-white">
         <div class="container text-center">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -61,7 +66,8 @@
             </div>
         </div>
     </section>
-    
+    <hr style="margin: 1px ;">
+
     <section class="py-5 bg-dark text-white">
         <div class="container">
             <h1 class="text-center mb-4">Frequently Asked Questions</h1>
@@ -73,7 +79,7 @@
                         </button>
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="accordion-body" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -83,7 +89,7 @@
                         </button>
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="accordion-body" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     </div>
                 </div>
             </div>
