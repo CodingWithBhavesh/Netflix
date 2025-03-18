@@ -24,12 +24,12 @@
     
     <script>
         document.getElementById("signupForm").addEventListener("submit", async (e) => {
-            e.preventDefault(); // Prevent form from reloading the page
+            e.preventDefault(); // Prevent page reload
 
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
             
-            const response = await fetch("http://127.0.0.1:5000/signup", {
+            const response = await fetch("https://netflix-3zxn.onrender.com/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, password })
@@ -39,8 +39,14 @@
             alert(data.message);
 
             if (response.ok) {
-                localStorage.setItem("username", username); // Store username
-                localStorage.setItem("showUsername", "true"); // Flag to show username
+                // Ask user if they want to save login details
+                const saveLogin = confirm("Do you want to save your username for future logins?");
+                
+                if (saveLogin) {
+                    localStorage.setItem("username", username); // Store username
+                    localStorage.setItem("showUsername", "true"); // Set flag for UI update
+                }
+                
                 window.location.href = "index.html"; // Redirect to main page
             }
         });

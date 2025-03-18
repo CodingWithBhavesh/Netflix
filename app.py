@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -20,13 +21,12 @@ def signup():
         return jsonify({"message": "Username already exists"}), 400
     
     users.append({"username": username, "password": password})
-    print("All Registered Users:", users)  # Debugging purposes
-    
     return jsonify({"message": "User registered successfully!"})
 
 @app.route("/get_users", methods=["GET"])
 def get_users():
-    return jsonify({"users": users})  # Returns all stored users
+    return jsonify({"users": users})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Get port from environment for deployment
+    app.run(host="0.0.0.0", port=port)
